@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Demo in Spring</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+
+    <style type="text/css">
+    .container {
+ 		 max-width: 960px;
+				}
+	
+.lh-condensed { line-height: 1.25; }
+
+ .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+</head>
+<body>
+
+  <!-- <h1>Demo SprintBoot</h1>  --> 
+   <!-- <h1 th:text="' Welcome  ' + ${name} + '!'" /> -->
+
+   
+   <div class ="contaimer">
+   <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Formulario</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Nombre</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Ingrese nombre" value="" required>
+            <div class="invalid-feedback">
+              Upss..!!! debes rellenar este campo
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Apellido</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Ingrese apellido" value="" required>
+            <div class="invalid-feedback">
+              Upss...!!! debes rellenar este campo
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="rut">RUT</label>
+            <input type="text" class="form-control" id="rut" placeholder="Ingrese Rut" value="" required>
+            <div class="invalid-feedback">
+              Upss...!!! debes rellenar este campo
+            </div>
+          </div>
+           <div class="col-md-6 mb-3">
+         	 <label for="email">Email </label>
+          		<input type="email" class="form-control" id="email" placeholder="you@example.com" value="" required>
+          			<div class="invalid-feedback">
+          	 			Upss.. !!! ingrese un email .
+          			</div>
+       	 </div>
+          
+        </div>
+
+        <div class="mb-3">
+          <label for="Cargo">Cargo</label>
+          <fieldset disabled>
+          <input type="text" class="form-control" id="cargo" placeholder="Cargo al que postula" value="">
+        </div>
+        </fieldset>
+        
+        <div class= "mb-3">
+        	<label for ="tecnologiaSeleccion">Tecnologias Pricipales</label>
+        	<select class="selectpicker" multiple  required>
+  				<option>PHP</option>
+  				<option>JAVA</option>
+  				<option>JAVASCRIPT</option>
+  				<option>Ruby Rails</option>
+			</select>
+			<div class="invalid-feedback">
+			Ups...!!! No olvide este campo.
+			</div>
+		</div>
+		
+		<div >
+		</div>
+
+        <div class="mb-3">
+          <label for="phone">Telefono</label>
+          <input type="text" class="form-control" id="phone" placeholder="12232323" required>
+          <div class="invalid-feedback">
+            Ups...!!! No olvide este campo.
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="lvlIngles">Nivel de ingles</label>
+            <select class="custom-select d-block w-100" id="lvlIngles" required>
+              <option value="">Choose...</option>
+              <option>Basico</option>
+              <option>Intermedio</option>
+              <option>Avanzado</option>
+            </select>
+            <div class="invalid-feedback">
+              Ups...!!! Seleccione su Nivel de Ingles.
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+   			 <label for="exampleFormControlFile1">Adjunte su CV</label>
+   			 <input type="file" class="form-control-file" id="exampleFormControlFile1">
+   			 <div class="invalid-feedback">
+             Ups...!!! No olvide este campo.
+            </div>
+ 		 </div>
+        
+        	<hr class="mb-4">
+        		<button class="btn btn-primary btn-lg btn-block" type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+   
+   
+   
+   
+   
+   
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+<script type="text/javascript">
+//Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  window.addEventListener('load', function () {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.filter.call(forms, function (form) {
+      form.addEventListener('submit', function (event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+      }, false)
+    })
+  }, false)
+}())
+</script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCmac0xbWnccrqhpJCJGiLCTYkb7DYVxbQ",
+    authDomain: "publicaciones-8edc2.firebaseapp.com",
+    databaseURL: "https://publicaciones-8edc2.firebaseio.com",
+    projectId: "publicaciones-8edc2",
+    storageBucket: "publicaciones-8edc2.appspot.com",
+    messagingSenderId: "820600035356",
+    appId: "1:820600035356:web:f461b54a54f41112aa67d9",
+    measurementId: "G-1C24TE3YJY"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
+<script type="text/javascript">
+var database = firebase.database();
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
